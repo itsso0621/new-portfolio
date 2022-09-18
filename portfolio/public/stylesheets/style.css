@@ -326,8 +326,59 @@ section {
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
-  position: absolute;
 }
+
+.progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+}
+
+.progress span.html {
+  width: 90%;
+}
+
+.progress span.css {
+  width: 90%;
+}
+
+.progress span.javascript {
+  width: 80%;
+}
+
+.progress span.figma {
+  width: 70%;
+}
+
+.progress span.node {
+  width: 80%;
+}
+.progress span.something {
+  width: 100%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  transform: translateX(-50%);
+}
+
 /* independed content  */
 .btn-container {
   display: flex;
